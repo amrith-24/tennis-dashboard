@@ -35,9 +35,7 @@ Run the tests with `pip install -r requirements-dev.txt && pytest`.
 - **Symmetry**: predictions are averaged over both player orderings, so swapping A and B
   gives exactly mirrored probabilities.
 
-> **Be realistic about the numbers.** The bundled `matches.csv` contains only 20 matches.
-> Cross-validated accuracy on it is around 65% with a very wide margin of error, so treat
-> predictions as a demo of the pipeline, not as betting advice. Real insight needs real data.
+> Tennis is hard to predict, so expect modest accuracy. See the **Model Performance** page for the cross-validated numbers on the loaded data.
 
 ## Using your own / ATP data
 
@@ -76,3 +74,5 @@ tests/            pytest suite (features, model, and a UI smoke test)
 - Load full ATP seasons and add Elo ratings
 - Recent-form and ranking features
 - More models (e.g. gradient boosting) once there is enough data
+
+Match data: "ATP Tennis 2000 - 2026 Daily update" by dissfya on Kaggle — https://www.kaggle.com/datasets/dissfya/atp-tennis-2000-2023daily-pull?resource=download
